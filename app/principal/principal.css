@@ -1,0 +1,9 @@
+@import "nativescript-theme-core/css/core.light.css";
+
+.h2 {
+    margin-left: 5;
+}
+
+.labelDetail {
+    margin-left: 5;
+}

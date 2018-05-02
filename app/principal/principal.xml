@@ -1,0 +1,32 @@
+<Page loaded="pageLoaded">
+
+    <ActionBar title="My App - Início" class="action-bar"></ActionBar>
+
+        <ListView id="listView" itemTap="selectItem">
+        
+            <ListView.itemTemplate>
+
+                <GridLayout rows="*" columns="*, *">
+                    <!-- <Image col="0" src="res://icon" stretch="none" /> -->
+                    <StackLayout col="0" orientation="vertical" height="75" verticalAlignment="center">
+                        <Label class="h2" text="{{name}}"></Label>
+                        <Label class="labelDetail" text="{{ profession }}"></Label>
+                    </StackLayout>
+                </GridLayout>
+            
+            </ListView.itemTemplate>
+        
+        </ListView>        
+    
+    <!-- <ScrollView orientation="vertical">
+ 
+        <StackLayout orientation="vertical">
+
+            <Label id="labelUser" textWrap="true" />
+
+        </StackLayout>
+    
+    </ScrollView> -->
+
+
+</Page>

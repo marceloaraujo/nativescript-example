@@ -1,0 +1,16 @@
+<Page loaded="pageLoaded">
+  <ActionBar title="My App" class="action-bar"></ActionBar>
+
+  <StackLayout orientation="vertical">
+
+    <Image src="~/images/mapps.png" horizontalAlignment="center" width="100" height="100" />
+
+    <TextField id="email" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" class="textField" />
+    <TextField id="pass" hint="Senha" secure="true" class="textField" />
+
+    <Button text="Logar" class="button" tap="logIn" />
+    <Button text="Inscrever-se" />
+
+  </StackLayout>
+
+</Page>

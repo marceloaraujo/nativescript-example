@@ -1,0 +1,48 @@
+@import "nativescript-theme-core/css/core.light.css";
+@import url('~/platform.css');
+
+#txt {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+Page {
+    background-color: white;
+    font-size: 17;
+}
+
+TextField {
+    margin: 10;
+    padding: 10;
+}
+
+/* Label {
+    margin: 10;
+    padding: 10;
+} */
+
+Image {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+Button {
+    margin: 10;
+    padding: 10;
+}
+
+.button {
+    background-color: #0277BD;
+    color: white;
+}
+
+/* @keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360); }
+}
+Image {
+  animation-name: spin; 
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+} */
