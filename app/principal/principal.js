@@ -1,3 +1,4 @@
+var frameModule = require("ui/frame");
 var http = require("http");
 // var fetch = require("fetch");
 var base64 = require("base-64");
@@ -11,7 +12,7 @@ exports.pageLoaded = function(args) {
     
 
     items = [
-        { name: "Bruce Wayne", profession: "🦇" },
+        { name: "Calendar test", profession: "RadCalendar test" },
         { name: "Clark Kent", profession: "🤓" },
         { name: "Tony Stark", profession: "🤖" },
         { name: "Steve Rogers", profession: "🇺🇸" },
@@ -53,6 +54,18 @@ exports.pageLoaded = function(args) {
 };
 
 exports.selectItem = function(args) {
-    var itemSelecionado = items[args.index];
-    alert("Selecionado >>> " + itemSelecionado.name + " - " + itemSelecionado.profession);
+    var moduleName = "";
+    var navigationOptions = {};
+    var index = args.index;
+    if(index == 0) {
+        moduleName = "calendartest/calendartest";
+    }
+
+    if(moduleName != "") {
+        navigationOptions.moduleName = moduleName;
+        var topMost = frameModule.topmost();
+        topMost.navigate(navigationOptions);
+    }
+    // var itemSelecionado = items[args.index];
+    // alert("Selecionado >>> " + itemSelecionado.name + " - " + itemSelecionado.profession);
 };

@@ -20,8 +20,14 @@ exports.logIn = function() {
         return;
     }
 
+    /**
+     * clearHistory: tira a tela anterior da pilha..
+     * será útil para aquelas telas que vc não quer que o app volte
+     * ex: tela de login
+     */
     var navigationOptions= {
         moduleName: "principal/principal",
+        clearHistory: true,
         context: {
             email: email.text,
             pass: pass.text
